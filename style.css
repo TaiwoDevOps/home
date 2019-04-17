@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+:root {
+  --primary-color: #ec6810;
+  --secondary-color: rgb(2, 141, 255);
+  --light-color: #f4f4f4;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #40474e;
+}
+.offset:before{
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: var(--primary-color)!important;
+}
+.navbar-brand img {
+  height: 2.5rem;
+  border-radius: 10%;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .navbar-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link:active{
+  color: var(--secondary-color);
+}
+
+/* Landing Page */
+.home-inner{
+  background-image: url(img/world-bg.png);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 span{
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  color: var(--light-color);
+  text-shadow: .1rem .1rem .8rem var(--secondary-color);
+  padding-bottom: 1rem;
+}
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  color: var(--primary-color);
+  text-shadow: .1rem .1rem .8rem var(--secondary-color);
+  padding-bottom: 1rem;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+  background-color: var(--secondary-color);
+}
+
+/* ---------------------------ABOUT US--------------------------- */
+.about-us {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  /*u can also just use 1fr, 1fr instead of the repeat method*/
+  text-align: left;
+  /*text in the container are by default centered*/
+}
+/* ---Accordion for the about side notes --- */
+.accordion {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--secondary-color);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media screen and (max-width: 780px) {
+  .about-us {
+    grid-template-columns: 1fr;
+  }
+}
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1ebba3;
+  background-color: #1ebba3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+
+/* ---------About us Section----------- */
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: var(--light-color);
+  margin: 0 auto 2rem;
+}
+.feature svg.svg-inline--fa{
+  color: #1ebba3;
+}
+.feature h3{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.feature p{
+  font-size: 1.1rem;
+}
+/* -------What we do Section ---------- */
+.fixed {
+  background-image: url(img/investment.jpg);
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7rem 2rem;  
+}
+.fixed-background h3{
+  margin-bottom: 2rem;
+}
+.fixed-background p{
+  margin-top: 1.5rem;
+}
+
+
+/* ---------Team Section---------- */
+.team {
+  background-color: var(--secondary-color);
+  padding-bottom: 80px;
+}
+.team h1 {
+  color: #fff;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  padding: 80px 0px 20px;
+  text-align: center;
+}
+
+.l-img {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.l-img img {
+  width: 100%;
+}
+
+.l-img:hover {
+  cursor: pointer;
+}
+
+.l-img:hover .l-caption {
+  transform: translateY(0%) scale(1);
+  -webkit-transform: translateY(0%) scale(1);
+  -ms-transform: translateY(0%) scale(1);
+  -o-transform: translateY(0%) scale(1);
+}
+
+.l-caption {
+  background-color: rgba(1, 4, 6, 0.45);
+  color: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 20px;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+  transition: 0.5 all;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transform: translateY(150%) scale(1.5);
+  -webkit-transition: translateY(150%) scale(1.5);
+  -ms-transition: translateY(150%) scale(1.5);
+  -moz-transition: translateY(150%) scale(1.5);
+  -o-transition: translateY(150%) scale(1.5);
+}
+
+
+
+.l-info {
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  padding: 5px 5px 0px 5px;
+  background-color: var(--primary-color);
+}
+
+.l-info p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.l-info h5 {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+/* ---------Clients Section---------- */
+.clients img{
+  width: 100%;
+  border-radius: 50%;
+}
+blockquote .svg-inline--fa{
+  color: #1ebba3;
+  margin: 1rem;
+}
+.clients-hr{
+  border-top: .05rem solid #1ebba3;
+}
+
+/* ---------------Contact Section--------------- */
+
+/* --------------------Contact form-----------------  */
+
+.container_contact {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  box-shadow: 0 0 2px 0 var(--primary-color);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #000;
+}
+@media screen and(max-width: 580px) {
+  .company-info .map {
+    display: none;
+  }
+}
+
+/* FORM STYLES */
+.contact {
+  color: #000;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: var(--primary-color);
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: var(--secondary-color);
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* LARGE SCREEN WITH MEDIA  */
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+/* ----------------------Map---------------------- */
+.map {
+  border-radius: 2px solid #000;
+  background: #fff;
+  /* padding: 1em; */
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+@media screen and (max-width: 780px) {
+  .container_contact .wrapper .company-info .map iframe {
+    display: none;
+  }
+}
+
+/* -------------------------------- Footer  -------------------------------- */
+
+footer {
+  background-color: #fff;
+}
+
+footer .container {
+  padding-bottom: 2px;
+}
+
+.three_clo {
+  color: #000;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.three_clo h4 {
+  letter-spacing: 2px;
+  color: #ff4f18;
+}
+
+.three_clo p {
+  text-align: left;
+}
+
+.three_clo input[type="email"] {
+  width: 84%;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 0.5em;
+  font-size: 18px;
+  color: #000000;
+}
+
+.btn1 {
+  color: var(--primary-color);
+  font-size: 18px;
+  border: 1px solid var(--primary-color);
+  width: 14%;
+  height: 38px;
+  text-decoration: none;
+  background: var(--light-color);
+}
+.btn1:hover{
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+.footer_contact {
+  color: #000;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.footer_contact h4 {
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.footer_contact p {
+  text-align: left;
+}
+
+.footer_contact i {
+  color: var(--primary-color);
+  padding-right: 20px;
+}
+
+.number {
+  color: #000;
+}
+
+.number a {
+  color: #000;
+}
+
+footer .footer-bottom {
+  background: #ffffff;
+  padding: 1rem;
+  color: #000;
+}
+.footer_contact .svg-inline--fa{
+  font-size: 1rem;
+  margin: 1.2rem .5rem 0 0;
+}
+/* footer .svg-inline--fa{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer .svg-inline--fa:hover{
+  color: #1ebba3!important;
+}
+hr.socket{
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 767px){
+  .caption h1{
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  .clients img{
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
