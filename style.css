@@ -191,12 +191,15 @@ h3.heading{
   padding: 7rem 2rem;  
 }
 .fixed-background h3{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .fixed-background p{
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
-
+/* .fixed-background .what-img h3{
+  padding-top: 2rem;
+  margin-top: 2rem
+} */
 
 /* ---------Team Section---------- */
 .team {
@@ -261,7 +264,18 @@ h3.heading{
   -moz-transition: translateY(150%) scale(1.5);
   -o-transition: translateY(150%) scale(1.5);
 }
-
+.l-caption a{
+  color: #eee;
+  padding-left: 5px;
+}
+.modal-header {
+  display: inline;
+  background-color: var(--primary-color);
+  color: #eee;
+}
+.modal-header button span{
+  color: #eee;
+}
 
 
 .l-info {
@@ -294,8 +308,6 @@ blockquote .svg-inline--fa{
 .clients-hr{
   border-top: .05rem solid #1ebba3;
 }
-
-/* ---------------Contact Section--------------- */
 
 /* --------------------Contact form-----------------  */
 
@@ -507,25 +519,6 @@ footer .footer-bottom {
   font-size: 1rem;
   margin: 1.2rem .5rem 0 0;
 }
-/* footer .svg-inline--fa{
-  font-size: 1.6rem;
-  margin: 1.2rem .5rem 0 0;
-}
-footer .svg-inline--fa:hover{
-  color: #1ebba3!important;
-}
-hr.socket{
-  width: 100%;
-  border-top: .2rem solid #666b71;
-  margin-top: 3rem;
-} */
-
-
-
-
-
-
-
 
 
 
@@ -554,21 +547,4 @@ hr.socket{
   }
 }
 
-/*============ BOOTSTRAP BREAK POINTS:
 
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
