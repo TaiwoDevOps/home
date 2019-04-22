@@ -123,63 +123,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/*============= COURSE SECTION =============*/
 
-.narrow {
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 2rem;
-}
-.narrow h1 {
-  font-size: 2.4rem;
-}
-.btn-secondary {
-  border-width: medium;
-  border-radius: 0;
-  padding: 0.6rem 1.2rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 1rem;
-  border-color: #1ebba3;
-  background-color: #1ebba3;
-  color: white;
-}
-.btn-secondary:hover,
-.btn-secondary:focus {
-  border-color: #189582;
-  background-color: #189582;
-  color: white;
-}
-
-/* ---------About us Section----------- */
-.jumbotron {
-  margin-bottom: 0;
-  padding: 2rem 0 3.5rem;
-  border-radius: 0;
-}
-h3.heading{
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1.9rem;
-}
-.heading-underline{
-  width: 3rem;
-  height: .2rem;
-  background-color: var(--light-color);
-  margin: 0 auto 2rem;
-}
-.feature svg.svg-inline--fa{
-  color: #1ebba3;
-}
-.feature h3{
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  padding-bottom: .4rem;
-}
-.feature p{
-  font-size: 1.1rem;
-}
 /* -------What we do Section ---------- */
 .fixed {
   background-image: url(img/investment.jpg);
@@ -196,10 +140,10 @@ h3.heading{
 .fixed-background p{
   margin-top: 1rem;
 }
-/* .fixed-background .what-img h3{
-  padding-top: 2rem;
-  margin-top: 2rem
-} */
+.what-img img {
+  width: 30%;
+  height: 30%;
+}
 
 /* ---------Team Section---------- */
 .team {
@@ -336,6 +280,10 @@ ul {
   .company-info .map {
     display: none;
   }
+  .what-img img {
+    width: 35%;
+    height: 23%;
+  }
 }
 
 /* FORM STYLES */
@@ -408,6 +356,10 @@ ul {
   .brand {
     text-align: left;
   }
+  .what-img img {
+    width: 30%;
+    height: 28%;
+  }
 }
 
 /* ----------------------Map---------------------- */
@@ -426,6 +378,10 @@ ul {
 @media screen and (max-width: 780px) {
   .container_contact .wrapper .company-info .map iframe {
     display: none;
+  }
+  .what-img img {
+    width: 30%;
+    height: 28%;
   }
 }
 
@@ -533,13 +489,10 @@ footer .footer-bottom {
     padding: .5rem 1rem;
     font-size: 1rem;
   }
-  .narrow h1 {
-    font-size: 1.5rem;
-  }
-  .clients img{
-    max-width: 50%;
-    display: block;
-    margin: 0 auto;
+  
+  .what-img img {
+    width: 30%;
+    height: 28%;
   }
 }
 
